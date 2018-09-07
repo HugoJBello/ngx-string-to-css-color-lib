@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-string-to-css-color-lib": [
+        "dist/ngx-string-to-css-color-lib"
+      ],
+      "ngx-string-to-css-color-lib/*": [
+        "dist/ngx-string-to-css-color-lib/*"
+      ]
+    }
   }
 }

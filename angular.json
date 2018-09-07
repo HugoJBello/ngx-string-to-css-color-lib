@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ngx-string-to-css-color-lib": {
+      "root": "projects/ngx-string-to-css-color-lib",
+      "sourceRoot": "projects/ngx-string-to-css-color-lib/src",
+      "projectType": "library",
+      "prefix": "enl",
+      "targets": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-string-to-css-color-lib/tsconfig.lib.json",
+            "project": "projects/ngx-string-to-css-color-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ngx-string-to-css-color-lib/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-string-to-css-color-lib/src/test.ts",
+            "tsConfig": "projects/ngx-string-to-css-color-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-string-to-css-color-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-string-to-css-color-lib/tsconfig.lib.json",
+              "projects/ngx-string-to-css-color-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-string-to-css-color-app"
