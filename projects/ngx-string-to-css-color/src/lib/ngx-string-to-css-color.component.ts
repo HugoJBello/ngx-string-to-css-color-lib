@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'enl-ngx-string-to-css-color-lib',
+  selector: 'lib-ngx-string-to-css-color',
   template: `
     <p>
-      ngx-string-to-css-color-lib works!
+      ngx-string-to-css-color works!
     </p>
   `,
   styles: []
 })
-export class NgxStringToCssColorLibComponent implements OnInit {
+export class NgxStringToCssColorComponent implements OnInit {
 
   constructor() { }
 

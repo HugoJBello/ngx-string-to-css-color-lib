@@ -23,6 +23,12 @@
       ],
       "ngx-string-to-css-color-lib/*": [
         "dist/ngx-string-to-css-color-lib/*"
+      ],
+      "ngx-string-to-css-color": [
+        "dist/ngx-string-to-css-color"
+      ],
+      "ngx-string-to-css-color/*": [
+        "dist/ngx-string-to-css-color/*"
       ]
     }
   }

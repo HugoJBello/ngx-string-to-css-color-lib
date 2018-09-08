@@ -122,38 +122,38 @@
         }
       }
     },
-    "ngx-string-to-css-color-lib": {
-      "root": "projects/ngx-string-to-css-color-lib",
-      "sourceRoot": "projects/ngx-string-to-css-color-lib/src",
+    "ngx-string-to-css-color": {
+      "root": "projects/ngx-string-to-css-color",
+      "sourceRoot": "projects/ngx-string-to-css-color/src",
       "projectType": "library",
-      "prefix": "enl",
+      "prefix": "lib",
       "targets": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ngx-string-to-css-color-lib/tsconfig.lib.json",
-            "project": "projects/ngx-string-to-css-color-lib/ng-package.json"
+            "tsConfig": "projects/ngx-string-to-css-color/tsconfig.lib.json",
+            "project": "projects/ngx-string-to-css-color/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/ngx-string-to-css-color-lib/ng-package.prod.json"
+              "project": "projects/ngx-string-to-css-color/ng-package.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-string-to-css-color-lib/src/test.ts",
-            "tsConfig": "projects/ngx-string-to-css-color-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-string-to-css-color-lib/karma.conf.js"
+            "main": "projects/ngx-string-to-css-color/src/test.ts",
+            "tsConfig": "projects/ngx-string-to-css-color/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-string-to-css-color/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-string-to-css-color-lib/tsconfig.lib.json",
-              "projects/ngx-string-to-css-color-lib/tsconfig.spec.json"
+              "projects/ngx-string-to-css-color/tsconfig.lib.json",
+              "projects/ngx-string-to-css-color/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
