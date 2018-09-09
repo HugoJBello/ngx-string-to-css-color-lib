@@ -1,5 +1,5 @@
 import { Directive, ElementRef, Input, OnInit} from '@angular/core';
-import {StringToColorService} from "../string-to-color.service";
+import { StringToColorService} from "../string-to-color.service";
 
 @Directive({
   selector: '[colorBackgroundFromText]'
