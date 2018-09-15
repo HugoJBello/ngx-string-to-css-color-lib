@@ -11,7 +11,12 @@ export class ColorBackgroundFromTextDirective implements OnInit{
   }
 
   ngOnInit() {
-    this.el.nativeElement.style.backgroundColor = this.stringToColor.stringToColour(this.colorBackgroundFromText,this.applyShade);
+    if (this.colorBackgroundFromText){
+      this.el.nativeElement.style.backgroundColor = this.stringToColor.stringToColour(this.colorBackgroundFromText,this.applyShade);
+    } else {
+      this.el.nativeElement.style.backgroundColor = this.stringToColor.stringToColour(this.el.nativeElement.innerText, this.applyShade);
+    }
+    console.log(this.el.nativeElement);
   }
 
 }
