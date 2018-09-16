@@ -1,4 +1,4 @@
-.border-font {
+.round-tag {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 2px;
@@ -9,4 +9,13 @@
     border-color: black;
     border-width: 1px;
     border-radius: 20px;
+    &-noborder{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        color: snow;
+        text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+        border-radius: 20px;
+    }
 }

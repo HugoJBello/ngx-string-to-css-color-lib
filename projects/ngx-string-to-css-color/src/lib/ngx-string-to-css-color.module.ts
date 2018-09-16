@@ -3,9 +3,9 @@ import { NgxStringToCssColorComponent } from './ngx-string-to-css-color.componen
 import { StringToColorService } from "./string-to-color.service";
 import { ColorBackgroundFromTextDirective } from './background-color-from-text/color-background-from-text.directive';
 import { TagWithBackgroundFromTextComponent } from './background-color-from-text/tag-with-background-from-text/tag-with-background-from-text.component';
-
+import { CommonModule } from "@angular/common"
 @NgModule({
-  imports: [
+  imports: [CommonModule
   ],
   declarations: [NgxStringToCssColorComponent, ColorBackgroundFromTextDirective, TagWithBackgroundFromTextComponent],
   exports: [NgxStringToCssColorComponent, ColorBackgroundFromTextDirective, TagWithBackgroundFromTextComponent],
