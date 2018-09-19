@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {BehaviorSubject, Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -6,9 +7,11 @@ import { Injectable } from '@angular/core';
 export class StringToColorService {
 
   defaultShadePercentage = -0.6;
-
+  defaultShadePercentage$:BehaviorSubject<any> = new BehaviorSubject('');
   constructor() { }
-
+  changeDefaultPercent(percent){
+    this.defaultShadePercentage$.next(percent);
+  }
   shadeColor2(color, percent) {
     if (!percent) {
       percent = this.defaultShadePercentage;

@@ -1,0 +1,12 @@
+th{
+ padding:20px
+}
+
+td{
+  padding:10px
+}
+pre {
+  max-width: 350px;
+  overflow-wrap: break-word;
+  white-space:pre-wrap;
+}

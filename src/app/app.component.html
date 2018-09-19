@@ -1,24 +1,57 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <lib-ngx-string-to-css-color></lib-ngx-string-to-css-color>
-  <p colorBackgroundFromText="'Some text'" applyShade="-0.9">Some text</p>
-  <p colorBackgroundFromText="'Some text'" applyShade="-0.5">Some text</p>
-  <p colorBackgroundFromText="'Some text'" applyShade="-0.2">Some text</p>
-  <p colorBackgroundFromText="'Some text'" applyShade="0.5">Some text</p>
-  <p colorBackgroundFromText="'Some text'">Some text</p>
+<div class="container">
+  <div class="starter-template">
+  <h3>Live example</h3>
+    <h4>Generate color from text</h4>
+    <strong>Add text to test </strong> <input [(ngModel)]="text" (keyup)="onChangeText()"/>
+    <pre></pre>
+    <div class="row">
+      <pre class="col-3">{{codeStringToColor}}</pre>
+      <div class="col-3">{{ stringToColorService.stringToColour(text)}}</div>
+      <div class="col-3"> <span [style.background]="stringToColorService.stringToColour(text)">____</span></div>
+    </div>
+    <div class="row">
+      <pre class="col-3">{{codeStringToColorShade1}}</pre>
+      <div class="col-3">{{ stringToColorService.stringToColour(text, -0.5)}}</div>
+      <div class="col-3"> <span [style.background]="stringToColorService.stringToColour(text, '-0.5')">____</span></div>
+    </div>
+    <div class="row">
+      <pre class="col-3">{{codeStringToColorShade2}}</pre>
+      <div class="col-3">{{ stringToColorService.stringToColour(text, -0.2)}}</div>
+      <div class="col-3"> <span [style.background]="stringToColorService.stringToColour(text, '-0.2')">____</span></div>
+    </div>
+    <div class="row">
+      <pre class="col-3">{{codeStringToColorShade3}}</pre>
+      <div class="col-3">{{ stringToColorService.stringToColour(text, '0')}}</div>
+      <div class="col-3"> <span [style.background]="stringToColorService.stringToColour(text, '0')">____</span></div>
+    </div>
 
-  <br>  
-  <p colorBackgroundFromText>Some text</p>
-  <div colorBackgroundFromText>Some text</div>
-  <span colorBackgroundFromText>Some text</span>
-  <br>
-  <br>
-  <tag-with-background-from-text [text]="'Some text'"></tag-with-background-from-text>
-  <br>
-  <br>
-  <tag-with-background-from-text [text]="'Some other text'"></tag-with-background-from-text>
-  <br>
-  <br>
-  <tag-with-background-from-text [text]="'More of the same thing'"></tag-with-background-from-text>
+    <div class="row">
+      <pre class="col-3">{{codeStringToColorShade3}}</pre>
+      <div class="col-3">{{ stringToColorService.stringToColour(text, 0.2)}}</div>
+      <div class="col-3"> <span [style.background]="stringToColorService.stringToColour(text, '0.2')">____</span></div>
+    </div>
 
+    <h3>Examples with tags</h3>
+  <table>
+    <tr>
+      <th>Text string</th>
+      <th>stringToColorService</th>
+      <th>default shade (-0.6)</th>
+      <th>with shade "-0.5"</th>
+      <th>with shade "-0.2"</th>
+      <th>with shade "0"</th>
+      <th>with shade "0.2"</th>
+    </tr>
+    <tr *ngFor="let text of textSample">
+      <td>{{text}}</td>
+      <td>{{ stringToColorService.stringToColour(text)}}</td>
+      <td><tag-with-background-from-text [text]="text"></tag-with-background-from-text></td>
+      <td><tag-with-background-from-text [text]="text" applyShade="-0.5"></tag-with-background-from-text></td>
+      <td><tag-with-background-from-text [text]="text" applyShade="-0.2"></tag-with-background-from-text></td>
+      <td><tag-with-background-from-text [text]="text" applyShade="0"></tag-with-background-from-text></td>
+      <td><tag-with-background-from-text [text]="text" applyShade="0.2"></tag-with-background-from-text></td>
+    </tr>
+  </table>
+</div>
 </div>

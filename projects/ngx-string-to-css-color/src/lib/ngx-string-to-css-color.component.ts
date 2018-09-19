@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {StringToColorService} from './string-to-color.service';
 
 @Component({
   selector: 'lib-ngx-string-to-css-color',
@@ -11,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgxStringToCssColorComponent implements OnInit {
 
-  constructor() { }
+  constructor(public stringToColorService: StringToColorService) { }
 
   ngOnInit() {
   }
