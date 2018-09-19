@@ -1,10 +1,9 @@
 {
   "name": "ngx-string-to-css-color",
   "name": "ngx-string-to-css-color-app",
-  "version": "0.0.1",
-  "url" : "https://github.com/HugoJBello/ngx-string-to-css-color-lib",
+   "url" : "https://github.com/HugoJBello/ngx-string-to-css-color-lib",
   "homepage": "https://github.com/HugoJBello/ngx-string-to-css-color-lib",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
