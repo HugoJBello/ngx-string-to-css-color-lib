@@ -10,7 +10,7 @@ An angular 2 library that lets you obtain css colors from strings of text. **Dif
 
 [Bug-reports or feature request](https://github.com/HugoJBello/ngx-string-to-css-color-lib/issues) as well as any other kind of **feedback is highly welcome!**
 
-Check the [live demo here](https://ngx-string-to-css-color.firebaseapp.com/)
+Check the [**live demo here!!**](https://ngx-string-to-css-color.firebaseapp.com/)
 
 
 ```
