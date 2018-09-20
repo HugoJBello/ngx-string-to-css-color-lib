@@ -89,7 +89,7 @@ you can change the shade using also the directive ``applyShade="-0.2"``.
 ```html
 <tag-with-background-from-text [text]="'sample test'" applyShade="-0.2"></tag-with-background-from-text>```
 ![](/screenshots/sample_test_tag_shade_-0.2.PNG)
-
+``
 
 ##More examples
 
