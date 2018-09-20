@@ -6,7 +6,7 @@ ngx-string-to-css-color
 
 An angular 2 library that lets you obtain css colors from strings of text. **Different text inputs will give you different colors**, which makes it a great tool to visualize different tags or text strings. Allowing you to do things like this:
 
-![](/screenshots/sample.PNG)
+![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample.PNG)
 
 [Bug-reports or feature request](https://github.com/HugoJBello/ngx-string-to-css-color-lib/issues) as well as any other kind of **feedback is highly welcome!**
 
@@ -59,7 +59,7 @@ gives you
 
 which is 
 
-![](/screenshots/sample_test_default.PNG)
+![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test_default.PNG)
 
 You can change the shade by adding a second parameter:
 
@@ -73,27 +73,27 @@ obtaining the lighter color
 ```typescript
 #3a9488
 ```
-![](/screenshots/sample_test_shade_-0.2.PNG)
+![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test_shade_-0.2.PNG)
 
 **If you change the input text, your the retrieved color will change**, for instance ``this.stringToColorService.stringToColour("sample test");`` will give you ´´#0a5a20´´ which is 
 
-![](/screenshots/sample_test22_default.PNG)
+![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test22_default.PNG)
 
 # Use the custom tag ``tag-with-background-from-text``
 The component tag-with-background-from-text can be used to obtain a chip tag that **assings its background color from the text inside**
 ```html
 <tag-with-background-from-text [text]="'sample test'"></tag-with-background-from-text>
 ```
-![](/screenshots/sample_test_tag_default.PNG)
+![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test_tag_default.PNG)
 
 you can change the shade using also the directive ``applyShade="-0.2"``.
 
 ```html
 <tag-with-background-from-text [text]="'sample test'" applyShade="-0.2"></tag-with-background-from-text>```
-![](/screenshots/sample_test_tag_shade_-0.2.PNG)
 ```
+![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test_tag_shade_-0.2.PNG)
 
 ##More examples
 
-![](/screenshots/examples.PNG)
+![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/examples.PNG)
 

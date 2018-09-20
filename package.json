@@ -1,14 +1,14 @@
 {
   "name": "ngx-string-to-css-color-app",
   "version": "0.0.7",
-  "url" : "https://github.com/HugoJBello/ngx-string-to-css-color-lib",
+  "url": "https://github.com/HugoJBello/ngx-string-to-css-color-lib",
   "homepage": "https://github.com/HugoJBello/ngx-string-to-css-color-lib",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "copy-readme-linux": "cp README.md dist/ngx-string-to-css-color",
-    "copy-readme-win": "copy README.md dist\\ngx-string-to-css-color",
+    "copy-readme-win": "copy README.md dist\\ngx-string-to-css-color && copy screenshots dist\\ngx-string-to-css-color\\screenshots",
     "build_lib": "ng build --prod ngx-string-to-css-color",
     "npm_pack": "cd dist/ngx-string-to-css-color && npm pack",
     "package": "npm run build_lib && npm run npm_pack",
