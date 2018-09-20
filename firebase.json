@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "dist/ngx-string-to-css-color-app",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
