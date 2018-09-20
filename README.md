@@ -4,7 +4,9 @@
 ngx-string-to-css-color
 ===========
 
-An angular 2 library that lets you obtain css colors from strings of text. **Different text inputs will give you different colors**, which makes it a great tool to visualize different tags or text strings.
+An angular 2 library that lets you obtain css colors from strings of text. **Different text inputs will give you different colors**, which makes it a great tool to visualize different tags or text strings. Allowing you to do things like this:
+
+![](/screenshots/samples.PNG)
 
 [Bug-reports or feature request](https://github.com/HugoJBello/ngx-string-to-css-color-lib/issues) as well as any other kind of **feedback is highly welcome!**
 
@@ -89,7 +91,7 @@ you can change the shade using also the directive ``applyShade="-0.2"``.
 ```html
 <tag-with-background-from-text [text]="'sample test'" applyShade="-0.2"></tag-with-background-from-text>```
 ![](/screenshots/sample_test_tag_shade_-0.2.PNG)
-``
+```
 
 ##More examples
 
