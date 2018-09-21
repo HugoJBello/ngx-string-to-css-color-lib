@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StringToColorService } from 'ngx-string-to-css-color';
+import { StringToColorService } from 'projects/ngx-string-to-css-color/src/public_api';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -25,19 +25,16 @@ export class AppComponent implements OnInit {
   constructor(public stringToColorService: StringToColorService) { }
 
   ngOnInit() {
-    const subscription = this.stringToColorService.defaultShadePercentage$.subscribe((percentage) => {
-      console.log(percentage);
-    });
     this.onChangeText();
-    this.stringToColorService.changeDefaultPercent(4);
   }
 
   onChangeText() {
-    this.codeStringToColor = 'this.stringToColorService.stringToColour("' + this.text + '")';
-    this.codeStringToColorShade1 = 'this.stringToColorService.stringToColour("' + this.text + '",\'-0.5\')';
-    this.codeStringToColorShade2 = 'this.stringToColorService.stringToColour("' + this.text + '",\'-0.2\')';
-    this.codeStringToColorShade3 = 'this.stringToColorService.stringToColour("' + this.text + '",\'0\')';
-    this.codeStringToColorShade4 = 'this.stringToColorService.stringToColour("' + this.text + '",\'0.2\')';
+    console.log(this.stringToColorService.stringToColor(this.text));
+    this.codeStringToColor = 'this.stringToColorService.stringToColor("' + this.text + '")';
+    this.codeStringToColorShade1 = 'this.stringToColorService.stringToColor("' + this.text + '",\'-0.5\')';
+    this.codeStringToColorShade2 = 'this.stringToColorService.stringToColor("' + this.text + '",\'-0.2\')';
+    this.codeStringToColorShade3 = 'this.stringToColorService.stringToColor("' + this.text + '",\'0\')';
+    this.codeStringToColorShade4 = 'this.stringToColorService.stringToColor("' + this.text + '",\'0.2\')';
     this.codeTagDefault = '<tag-with-background-from-text [text]="\'' + this.text + '\'"></tag-with-background-from-text>';
     this.codeTagShade1 = '<tag-with-background-from-text [text]="\'' + this.text + '\'"'
       + ' applyShade="-0.5"></tag-with-background-from-text>';

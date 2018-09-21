@@ -13,8 +13,8 @@
 
     <!-- Place this tag where you want the button to render. -->
     <!-- Place this tag where you want the button to render. -->
-    <a class="github-button" href="https://github.com/HugoJBello/ngx-string-to-css-color-lib" data-icon="octicon-star" data-size="large"
-      data-show-count="true" aria-label="Star ngx-string-to-css-color on GitHub">Star</a>
+    <a class="github-button" href="https://github.com/HugoJBello/ngx-string-to-css-color-lib" data-icon="octicon-star"
+      data-size="large" data-show-count="true" aria-label="Star ngx-string-to-css-color on GitHub">Star</a>
 
     <!-- Place this tag where you want the button to render. -->
     <a class="github-button" href="https://github.com/HugoJBello/ngx-string-to-css-color-lib/fork" data-icon="octicon-repo-forked"
@@ -33,7 +33,8 @@
 
     <div class="form-group">
       <label for="textu">Add text to test</label>
-      <input [(ngModel)]="text" (keyup)="onChangeText()" class="form-control" id="textu" aria-describedby="emailHelp" placeholder="Enter email">
+      <input [(ngModel)]="text" (keyup)="onChangeText()" class="form-control" id="textu" aria-describedby="emailHelp"
+        placeholder="Add text to test">
     </div>
     <br>
     <br>
@@ -47,46 +48,46 @@
         <td>
           <pre>{{codeStringToColor}}</pre>
         </td>
-        <td>{{ stringToColorService.stringToColour(text)}}</td>
+        <td>{{ stringToColorService.stringToColor(text)}}</td>
         <td>
-          <span [style.background]="stringToColorService.stringToColour(text)">____</span>
+          <span [style.background]="stringToColorService.stringToColor(text)">____</span>
         </td>
       </tr>
       <tr>
         <td>
           <pre>{{codeStringToColorShade1}}</pre>
         </td>
-        <td>{{ stringToColorService.stringToColour(text, '-0.5')}}</td>
+        <td>{{ stringToColorService.stringToColor(text, '-0.5')}}</td>
         <td>
-          <span [style.background]="stringToColorService.stringToColour(text, '-0.5')">____</span>
+          <span [style.background]="stringToColorService.stringToColor(text, '-0.5')">____</span>
         </td>
       </tr>
       <tr>
         <td>
           <pre>{{codeStringToColorShade2}}</pre>
         </td>
-        <td>{{ stringToColorService.stringToColour(text, '-0.2')}}</td>
+        <td>{{ stringToColorService.stringToColor(text, '-0.2')}}</td>
         <td>
-          <span [style.background]="stringToColorService.stringToColour(text, '-0.2')">____</span>
+          <span [style.background]="stringToColorService.stringToColor(text, '-0.2')">____</span>
         </td>
       </tr>
       <tr>
         <td>
           <pre>{{codeStringToColorShade3}}</pre>
         </td>
-        <td>{{ stringToColorService.stringToColour(text, '0')}}</td>
+        <td>{{ stringToColorService.stringToColor(text, '0')}}</td>
         <td>
-          <span [style.background]="stringToColorService.stringToColour(text, '0')">____</span>
+          <span [style.background]="stringToColorService.stringToColor(text, '0')">____</span>
         </td>
       </tr>
 
       <tr>
         <td>
           <pre>{{codeStringToColorShade4}}</pre>
-          <td>{{ stringToColorService.stringToColour(text, '0.2')}}</td>
-          <td>
-            <span [style.background]="stringToColorService.stringToColour(text, 0.2)">____</span>
-          </td>
+        <td>{{ stringToColorService.stringToColor(text, '0.2')}}</td>
+        <td>
+          <span [style.background]="stringToColorService.stringToColor(text, 0.2)">____</span>
+        </td>
       </tr>
     </table>
 
@@ -153,7 +154,7 @@
       </tr>
       <tr *ngFor="let text of textSample">
         <td>{{text}}</td>
-        <td>{{ stringToColorService.stringToColour(text)}}</td>
+        <td>{{ stringToColorService.stringToColor(text)}}</td>
         <td>
           <tag-with-background-from-text [text]="text"></tag-with-background-from-text>
         </td>

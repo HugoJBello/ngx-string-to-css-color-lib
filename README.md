@@ -48,7 +48,7 @@ constructor (public stringToColorService : StringToColorService) {}
 you will see that it transforms any string into a css color that you can later use in your code, For instance
 
 ```typescript
-const color = this.stringToColorService.stringToColour("sample test");
+const color = this.stringToColorService.stringToColor("sample test");
 console.log(color);
 ```
 gives you 
@@ -64,7 +64,7 @@ which is
 You can change the shade by adding a second parameter:
 
 ```typescript
-const color = this.stringToColorService.stringToColour("sample test",'-0.2');
+const color = this.stringToColorService.stringToColor("sample test",'-0.2');
 console.log(color);
 ```
 
@@ -75,7 +75,7 @@ obtaining the lighter color
 ```
 ![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test_shade_-0.2.PNG)
 
-**If you change the input text, your the retrieved color will change**, for instance ``this.stringToColorService.stringToColour("sample test");`` will give you ´´#0a5a20´´ which is 
+**If you change the input text, your the retrieved color will change**, for instance ``this.stringToColorService.stringToColor("sample test");`` will give you ´´#0a5a20´´ which is 
 
 ![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test22_default.PNG)
 

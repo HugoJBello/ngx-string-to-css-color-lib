@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { StringToColorService} from '../../string-to-color.service';
+import { StringToColorService } from '../../string-to-color.service';
 
 @Component({
   selector: 'tag-with-background-from-text',
@@ -17,7 +17,7 @@ export class TagWithBackgroundFromTextComponent implements OnInit {
   }
 
   calculateColor(str: string) {
-    return this.stringToColorService.stringToColour(this.text, this.applyShade);
+    return this.stringToColorService.stringToColor(this.text, this.applyShade);
   }
 
 }
