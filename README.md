@@ -4,7 +4,7 @@
 ngx-string-to-css-color
 ===========
 
-An angular 2 library that lets you obtain css colors from strings of text. **Different text inputs will give you different colors**, which makes it a great tool to visualize different tags or text strings. Allowing you to do things like this:
+An angular 2 library that lets you obtain css colors (hexadecimal code) from strings of text using hash functions. **Different text inputs will give you different colors**, which makes it a great tool to visualize different tags or text strings. Allowing you to do things like this:
 
 ![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample.PNG)
 
