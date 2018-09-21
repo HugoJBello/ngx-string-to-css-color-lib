@@ -3,5 +3,6 @@
   "dest": "../../dist/ngx-string-to-css-color",
   "lib": {
     "entryFile": "src/public_api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": ["string-to-hex-code-color"]
 }

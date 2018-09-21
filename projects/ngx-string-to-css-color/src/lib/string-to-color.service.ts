@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { String2HexCodeColor } from './string2HexCodeColor';
+import {String2HexCodeColor} from 'string-to-hex-code-color';
 @Injectable({
   providedIn: 'root'
 })

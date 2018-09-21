@@ -6,5 +6,11 @@
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "string-to-hex-code-color": "^1.0.1"
+  },
+  "devDependencies": {
+    "rxjs": "^1.0.1"
   }
 }

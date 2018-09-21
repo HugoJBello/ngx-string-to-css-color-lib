@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StringToColorService } from 'projects/ngx-string-to-css-color/src/public_api';
+import {String2HexCodeColor} from 'string-to-hex-code-color';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -22,14 +24,17 @@ export class AppComponent implements OnInit {
   codeTagShade4: string;
 
 
-  constructor(public stringToColorService: StringToColorService) { }
+  constructor(public stringToColorService: StringToColorService) { 
+  }
 
   ngOnInit() {
     this.onChangeText();
+    const str = new String2HexCodeColor(0.2);
+    console.log(str.stringToColor('aaa'));
+
   }
 
   onChangeText() {
-    console.log(this.stringToColorService.stringToColor(this.text));
     this.codeStringToColor = 'this.stringToColorService.stringToColor("' + this.text + '")';
     this.codeStringToColorShade1 = 'this.stringToColorService.stringToColor("' + this.text + '",\'-0.5\')';
     this.codeStringToColorShade2 = 'this.stringToColorService.stringToColor("' + this.text + '",\'-0.2\')';
