@@ -46,20 +46,11 @@
       </tr>
       <tr>
         <td>
-          <pre>{{codeStringToColor}}</pre>
-        </td>
-        <td>{{ stringToColorService.stringToColor(text)}}</td>
-        <td>
-          <span [style.background]="stringToColorService.stringToColor(text)">____</span>
-        </td>
-      </tr>
-      <tr>
-        <td>
           <pre>{{codeStringToColorShade1}}</pre>
         </td>
         <td>{{ stringToColorService.stringToColor(text, '-0.5')}}</td>
         <td>
-          <span [style.background]="stringToColorService.stringToColor(text, '-0.5')">____</span>
+          <span [style.background]="stringToColorService.stringToColor(text, '-0.5')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </td>
       </tr>
       <tr>
@@ -68,7 +59,7 @@
         </td>
         <td>{{ stringToColorService.stringToColor(text, '-0.2')}}</td>
         <td>
-          <span [style.background]="stringToColorService.stringToColor(text, '-0.2')">____</span>
+          <span [style.background]="stringToColorService.stringToColor(text, '-0.2')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </td>
       </tr>
       <tr>
@@ -77,7 +68,7 @@
         </td>
         <td>{{ stringToColorService.stringToColor(text, '0')}}</td>
         <td>
-          <span [style.background]="stringToColorService.stringToColor(text, '0')">____</span>
+          <span [style.background]="stringToColorService.stringToColor(text, '0')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </td>
       </tr>
 
@@ -86,7 +77,7 @@
           <pre>{{codeStringToColorShade4}}</pre>
         <td>{{ stringToColorService.stringToColor(text, '0.2')}}</td>
         <td>
-          <span [style.background]="stringToColorService.stringToColor(text, 0.2)">____</span>
+          <span [style.background]="stringToColorService.stringToColor(text, 0.2)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </td>
       </tr>
     </table>
@@ -146,29 +137,29 @@
       <tr>
         <th>Text string</th>
         <th>stringToColorService</th>
-        <th>default shade (-0.6)</th>
-        <th>with shade "-0.5"</th>
-        <th>with shade "-0.2"</th>
-        <th>with shade "0"</th>
         <th>with shade "0.2"</th>
+        <th>default shade (0)</th>
+        <th>with shade "-0.2"</th>
+        <th>with shade "-0.5"</th>
+        <th>with shade "-0.8"</th>
       </tr>
       <tr *ngFor="let text of textSample">
         <td>{{text}}</td>
         <td>{{ stringToColorService.stringToColor(text)}}</td>
         <td>
-          <tag-with-background-from-text [text]="text"></tag-with-background-from-text>
+          <tag-with-background-from-text [text]="text" applyShade="0.2"></tag-with-background-from-text>
         </td>
         <td>
-          <tag-with-background-from-text [text]="text" applyShade="-0.5"></tag-with-background-from-text>
+          <tag-with-background-from-text [text]="text"></tag-with-background-from-text>
         </td>
         <td>
           <tag-with-background-from-text [text]="text" applyShade="-0.2"></tag-with-background-from-text>
         </td>
         <td>
-          <tag-with-background-from-text [text]="text" applyShade="0"></tag-with-background-from-text>
+          <tag-with-background-from-text [text]="text" applyShade="-0.5"></tag-with-background-from-text>
         </td>
         <td>
-          <tag-with-background-from-text [text]="text" applyShade="0.2"></tag-with-background-from-text>
+          <tag-with-background-from-text [text]="text" applyShade="-0.8"></tag-with-background-from-text>
         </td>
       </tr>
     </table>
