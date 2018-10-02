@@ -65,14 +65,14 @@ which is
 You can change the shade by adding a second parameter:
 
 ```typescript
-const color = this.stringToColorService.stringToColor("sample test",'-0.2');
+const color = this.stringToColorService.stringToColor("sample test",'-0.5');
 console.log(color);
 ```
 
 obtaining the darker color
 
 ```typescript
-#3d42c5
+#26297b
 ```
 ![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test_shade_-0.2.PNG)
 
@@ -87,10 +87,10 @@ The component tag-with-background-from-text can be used to obtain a chip tag tha
 ```
 ![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test_tag_default.PNG)
 
-you can change the shade using also the directive ``applyShade="-0.2"``.
+you can change the shade using also the directive ``applyShade="-0.5"``.
 
 ```html
-<tag-with-background-from-text [text]="'sample test'" applyShade="-0.2"></tag-with-background-from-text>```
+<tag-with-background-from-text [text]="'sample test'" applyShade="-0.5"></tag-with-background-from-text>```
 ```
 ![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test_tag_shade_-0.2.PNG)
 
