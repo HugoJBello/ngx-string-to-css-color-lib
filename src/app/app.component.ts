@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StringToColorService } from 'projects/ngx-string-to-css-color/src/public_api';
-import {String2HexCodeColor} from 'string-to-hex-code-color';
+import { String2HexCodeColor } from 'string-to-hex-code-color';
 
 @Component({
   selector: 'app-root',
@@ -24,12 +24,12 @@ export class AppComponent implements OnInit {
   codeTagShade4: string;
 
 
-  constructor(public stringToColorService: StringToColorService) { 
+  constructor(public stringToColorService: StringToColorService) {
   }
 
   ngOnInit() {
     this.onChangeText();
-    const str = new String2HexCodeColor(0.2);
+    const str = new String2HexCodeColor(0);
     console.log(str.stringToColor('aaa'));
 
   }

@@ -55,7 +55,7 @@ console.log(color);
 gives you 
 
 ```typescript
-#1d4a44
+#4c52f6
 ```
 
 which is 
@@ -69,14 +69,14 @@ const color = this.stringToColorService.stringToColor("sample test",'-0.2');
 console.log(color);
 ```
 
-obtaining the lighter color
+obtaining the darker color
 
 ```typescript
-#3a9488
+#3d42c5
 ```
 ![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test_shade_-0.2.PNG)
 
-**If you change the input text, your the retrieved color will change**, for instance ``this.stringToColorService.stringToColor("sample test");`` will give you ´´#0a5a20´´ which is 
+**If you change the input text, your the retrieved color will change**, for instance ``this.stringToColorService.stringToColor("sample test22");`` will give you ´´#c0868f´´ which is 
 
 ![](https://raw.githubusercontent.com/HugoJBello/ngx-string-to-css-color-lib/master/screenshots/sample_test22_default.PNG)
 

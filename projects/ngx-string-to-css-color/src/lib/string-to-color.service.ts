@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import {String2HexCodeColor} from 'string-to-hex-code-color';
+import { String2HexCodeColor } from 'string-to-hex-code-color';
 @Injectable({
   providedIn: 'root'
 })
@@ -9,7 +9,7 @@ export class StringToColorService {
   defaultShadePercentage$: BehaviorSubject<any> = new BehaviorSubject('');
   string2HexCodeColor: String2HexCodeColor;
   constructor() {
-    this.string2HexCodeColor = new String2HexCodeColor(-0.6);
+    this.string2HexCodeColor = new String2HexCodeColor(0);
   }
 
   changeDefaultPercent(percent) {

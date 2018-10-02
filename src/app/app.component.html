@@ -68,7 +68,7 @@
         </td>
         <td>{{ stringToColorService.stringToColor(text, '0')}}</td>
         <td>
-          <span [style.background]="stringToColorService.stringToColor(text, '0')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+          <span [style.background]="stringToColorService.stringToColor(text, '0')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </td>
       </tr>
 
@@ -88,14 +88,6 @@
       <tr>
         <th>Code (using tags)</th>
         <th>result</th>
-      </tr>
-      <tr>
-        <td>
-          <pre>{{codeTagDefault}}</pre>
-        </td>
-        <td>
-          <tag-with-background-from-text [text]="text"></tag-with-background-from-text>
-        </td>
       </tr>
       <tr>
         <td>
@@ -119,6 +111,14 @@
         </td>
         <td>
           <tag-with-background-from-text [text]="text" applyShade="0"></tag-with-background-from-text>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <pre>{{codeTagDefault}}</pre>
+        </td>
+        <td>
+          <tag-with-background-from-text [text]="text"></tag-with-background-from-text>
         </td>
       </tr>
       <tr>
